@@ -21,7 +21,7 @@ class Role extends Seeder
                 "name"=>'Admin',
                 "id_parent"=>null,
                 "ListAction"=>'[]',
-                "ListModule"=>'["MD0001","MD0002","MD0003","MD0004","MD0005","MD0006","MD0007","MD0008","MD0009","MD0010","MD0011","MD0012","MD0013","MD0014"]',
+                "ListModule"=>'["MD0001","MD0002","MD0003","MD0004"]',
             ],
             [
                 "code"=>'R0002',

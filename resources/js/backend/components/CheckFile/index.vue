@@ -25,7 +25,7 @@ export default {
                 left: 'center',
                 top: 'center',
                 style: {
-                text: 'Khánh Vinh Dev Tool',
+                text: 'Welcome to CAP SADEC',
                 fontSize: 80,
                 fontWeight: 'bold',
                 lineDash: [0, 200],

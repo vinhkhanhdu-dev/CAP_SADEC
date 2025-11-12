@@ -106,7 +106,7 @@ export default {
                 type: 'warning'
             }).then(() => {
                 this.$store.dispatch(`user/${LOGOUT}`).then(() => {
-                    this.$router.push({name: 'CheckFile'});
+                    this.$router.push({name: 'Login'});
                 });
             }).catch(() => {
 

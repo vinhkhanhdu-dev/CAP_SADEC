@@ -21,92 +21,7 @@ export const constantRouterMap = [
         component: ()=> import('../components/index'),
         name: 'admin',
         redirect: '/index',
-        children: [
-        
-
-            //Test
-            {
-                path: '/Test',
-                component: () => import('../components/Test/index'),
-                name: 'TestList',
-                meta: { title: 'TestList' }
-            },
-            {
-                path: '/Test/create',
-                component: () => import('../components/Test/form'),
-                name: 'TestCreate',
-                meta: { title: 'TestCreate', type: 'Form' }
-            },
-            {
-                path: '/Test/:id?',
-                component: () => import('../components/Test/form'),
-                name: 'TestUpdate',
-                meta: { title: 'TestUpdate', type: 'Form' }
-            },,
-        
-
-            //QuanLyChiThu
-            {
-                path: '/QuanLyChiThu',
-                component: () => import('../components/QuanLyChiThu/index'),
-                name: 'QuanLyChiThuList',
-                meta: { title: 'QuanLyChiThuList' }
-            },
-            {
-                path: '/QuanLyChiThu/create',
-                component: () => import('../components/QuanLyChiThu/form'),
-                name: 'QuanLyChiThuCreate',
-                meta: { title: 'QuanLyChiThuCreate', type: 'Form' }
-            },
-            {
-                path: '/QuanLyChiThu/:id?',
-                component: () => import('../components/QuanLyChiThu/form'),
-                name: 'QuanLyChiThuUpdate',
-                meta: { title: 'QuanLyChiThuUpdate', type: 'Form' }
-            },,
-        
-
-            //QuanLyChiThu
-            {
-                path: '/QuanLyChiThu',
-                component: () => import('../components/QuanLyChiThu/index'),
-                name: 'QuanLyChiThuList',
-                meta: { title: 'QuanLyChiThuList' }
-            },
-            {
-                path: '/QuanLyChiThu/create',
-                component: () => import('../components/QuanLyChiThu/form'),
-                name: 'QuanLyChiThuCreate',
-                meta: { title: 'QuanLyChiThuCreate', type: 'Form' }
-            },
-            {
-                path: '/QuanLyChiThu/:id?',
-                component: () => import('../components/QuanLyChiThu/form'),
-                name: 'QuanLyChiThuUpdate',
-                meta: { title: 'QuanLyChiThuUpdate', type: 'Form' }
-            },,
-        
-
-            //QuanLyChiThu
-            {
-                path: '/QuanLyChiThu',
-                component: () => import('../components/QuanLyChiThu/index'),
-                name: 'QuanLyChiThuList',
-                meta: { title: 'QuanLyChiThuList' }
-            },
-            {
-                path: '/QuanLyChiThu/create',
-                component: () => import('../components/QuanLyChiThu/form'),
-                name: 'QuanLyChiThuCreate',
-                meta: { title: 'QuanLyChiThuCreate', type: 'Form' }
-            },
-            {
-                path: '/QuanLyChiThu/:id?',
-                component: () => import('../components/QuanLyChiThu/form'),
-                name: 'QuanLyChiThuUpdate',
-                meta: { title: 'QuanLyChiThuUpdate', type: 'Form' }
-            },,
-        
+        children: [       
 
             //QuanLyKhuVuc
             {
@@ -215,83 +130,8 @@ export const constantRouterMap = [
                 component: () => import('../components/Setting/index'),
                 name:'Setting',
                 meta:{title:'Settings'}
-            },
-  
-            //Thong tin don vi
-            {
-                path: '/thongtindonvi',
-                component: () => import('../components/ThongTinDonVi/list'),  
-                name:'ThongTinDonVi',
-                meta:{title:'ThongTinDonVi', type:'Form'}
-            }, 
-
-             //Danh sách kỳ thi
-             {
-                path: '/danhsachkythi',
-                component: () => import('../components/DanhSachKyThi/list'),  
-                name:'DanhSachKyThi',
-                meta:{title:'DanhSachKyThi', type:'Form'}
-            }, 
-             //Danh sách khối thi
-             {
-                path: '/danhsachkhoithi',
-                component: () => import('../components/DanhSachKhoiThi/list'),  
-                name:'DanhSachKhoiThi',
-                meta:{title:'DanhSachKhoiThi', type:'Form'}
-            }, 
-             //Danh sách môn thi
-             {
-                path: '/danhsachmonthi',
-                component: () => import('../components/DanhSachMonThi/list'),  
-                name:'DanhSachMonThi',
-                meta:{title:'DanhSachMonThi', type:'Form'}
-            }, 
-              //Danh sách phòng thi
-              {
-                path: '/danhsachphongthi',
-                component: () => import('../components/DanhSachPhongThi/list'),  
-                name:'DanhSachPhongThi',
-                meta:{title:'DanhSachPhongThi', type:'Form'}
-            }, 
-              //Danh sách thí sinh
-            {
-                path: '/danhsachthisinh',
-                component: () => import('../components/DanhSachThiSinh/list'),  
-                name:'DanhSachThiSinh',
-                meta:{title:'DanhSachThiSinh', type:'Form'}
-            }, 
-            {
-                path: '/danhsachthisinh/create',
-                component: () => import('../components/DanhSachThiSinh/form'),
-                name:'DanhSachThiSinhCreate',
-                meta:{title:'DanhSachThiSinhCreate',type:'Form'}
-            },
-            {
-                path: '/danhsachthisinh/:maNamHoc/:maKhoiThi',
-                component: () => import('../components/DanhSachThiSinh/formUpdate'),
-                name:'DanhSachThiSinhUpdate',
-                meta:{title:'DanhSachThiSinhUpdate',type:'Form'}
-            },
-            {
-                path: '/danhsachthisinh/:id?',
-                component: () => import('../components/DanhSachThiSinh/form'),
-                name:'DanhSachThiSinhUpdate',
-                meta:{title:'DanhSachThiSinhUpdate', type:'Form'}
-            },   
-             //Danh sách năm học
-             {
-                path: '/danhsachnamhoc',
-                component: () => import('../components/DanhSachNamHoc/list'),  
-                name:'DanhSachNamHoc',
-                meta:{title:'DanhSachNamHoc', type:'Form'}
-            }, 
-            //Danh sách năm học
-            {
-                path: '/ketquasapphongthi',
-                component: () => import('../components/KetQuaSapPhongThi/list'),  
-                name:'KetQuaSapPhongThi',
-                meta:{title:'KetQuaSapPhongThi', type:'Form'}
-            },   
+            },  
+        
         ]
     },
     {
@@ -331,7 +171,7 @@ export function resetRouter() {
     router.matcher = newRouter.matcher; // reset router
 }
 
-const DEFAULT_TITLE ='HTSXPT';
+const DEFAULT_TITLE ='CAP_SADEC';
 router.afterEach((to,from) => {  
     document.title =(DEFAULT_TITLE + ' - ' + to.meta.title )|| DEFAULT_TITLE + ' - '+(to.name);
 });
