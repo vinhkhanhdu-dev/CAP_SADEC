@@ -43,7 +43,14 @@ Route::group([
 
     });
 });
-Route::prefix('admin')->namespace('admin')->group(function () {    
+Route::prefix('admin')->namespace('admin')->group(function () {
+        //TrangThaiLichHen
+    Route::get('trangThaiLichHen', 'TrangThaiLichHenController@index');
+    Route::get('trangThaiLichHen/gen_code', 'TrangThaiLichHenController@genCode');
+    Route::get('trangThaiLichHen/detail/{id}', 'TrangThaiLichHenController@show');
+    Route::post('trangThaiLichHen/update/{id}', 'TrangThaiLichHenController@update');
+    Route::post('trangThaiLichHen/create', 'TrangThaiLichHenController@store');
+    Route::post('trangThaiLichHen/delete/{id}', 'TrangThaiLichHenController@destroy');        
     //File
     Route::post('upload', 'UploadController@upload');
     Route::post('removeFile', 'UploadController@removeFile');  

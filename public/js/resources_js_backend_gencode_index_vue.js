@@ -206,6 +206,9 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
           setTimeout(function () {
             location.reload();
           }, 4000);
+        } else {
+          console.log(data);
+          _this8.loading = false;
         }
       });
     },

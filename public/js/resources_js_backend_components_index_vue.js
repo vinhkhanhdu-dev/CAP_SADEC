@@ -492,7 +492,7 @@ var staticRenderFns = [function () {
     attrs: {
       href: "#"
     }
-  }, [_vm._v("Hệ thống sắp phòng thi tự động")]), _vm._v(".")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("CAP_SADEC")]), _vm._v(".")]), _vm._v(" "), _c("div", {
     staticClass: "float-right d-none d-sm-inline-block"
   }, [_c("b", [_vm._v("Version")]), _vm._v(" 1.0.0\n    ")])])]);
 }];

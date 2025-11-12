@@ -21,7 +21,28 @@ export const constantRouterMap = [
         component: ()=> import('../components/index'),
         name: 'admin',
         redirect: '/index',
-        children: [       
+        children: [
+        
+
+            //TrangThaiLichHen
+            {
+                path: '/TrangThaiLichHen',
+                component: () => import('../components/TrangThaiLichHen/index'),
+                name: 'TrangThaiLichHenList',
+                meta: { title: 'TrangThaiLichHenList' }
+            },
+            {
+                path: '/TrangThaiLichHen/create',
+                component: () => import('../components/TrangThaiLichHen/form'),
+                name: 'TrangThaiLichHenCreate',
+                meta: { title: 'TrangThaiLichHenCreate', type: 'Form' }
+            },
+            {
+                path: '/TrangThaiLichHen/:id?',
+                component: () => import('../components/TrangThaiLichHen/form'),
+                name: 'TrangThaiLichHenUpdate',
+                meta: { title: 'TrangThaiLichHenUpdate', type: 'Form' }
+            },,       
 
             //QuanLyKhuVuc
             {

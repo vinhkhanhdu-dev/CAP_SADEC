@@ -415,7 +415,11 @@ export default {
                     setTimeout(()=>{
                         location.reload();
                     },4000)
+                }else{
+                    console.log(data);      
+                    this.loading=false              
                 }
+
             })
         },
         deleteRow(id){
