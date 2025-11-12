@@ -22,8 +22,8 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
 ## Note
-[Run git bash: sh setup.sh]
-[php artisan serve --host 0.0.0.0]
-[npm run watch]
-[php-7.4]
+[Run git bash: sh setup.sh]  
+[php artisan serve --host 0.0.0.0]  
+[npm run watch]  
+[php-7.4]  
 [nodejs 16]
